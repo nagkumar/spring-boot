@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.5.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'net.devh:grpc-client-spring-boot-starter:2.13.0.RELEASE'
+    implementation 'gae.piaz:spec-pb:1.1'
+}

@@ -1,0 +1,32 @@
+DELETE http://127.0.0.1:8080/api/v1/todo/1
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/api/v1/todo/2
+Accept: application/json
+
+<> 2021-10-17T005728.200.json
+<> 2021-10-17T005632.200.json
+
+###
+POST http://127.0.0.1:8080/api/v1/todo
+Content-Type: application/json
+
+{
+    "title": "Go to market",
+    "description": "Buy eggs from market",
+    "todoStatus": "NOT_COMPLETED"
+}
+
+<> 2021-10-17T005514.201.json
+<> 2021-10-17T005440.401.html
+
+###
+GET http://127.0.0.1:8080/api/v1/todo
+Accept: application/json
+
+<> 2021-10-17T005737.200.json
+<> 2021-10-17T005520.200.json
+<> 2021-10-17T005246.200.json
+
+###
