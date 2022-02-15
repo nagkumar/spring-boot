@@ -1,18 +1,8 @@
 plugins {
-    id "java"
-    id "idea"
     id "maven-publish"
     id "com.google.protobuf" version "0.8.12"
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
-group "gae.piaz"
-version "1.0"
-
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
 dependencies {
     implementation 'io.grpc:grpc-netty-shaded:1.40.1'
     implementation 'io.grpc:grpc-protobuf:1.40.1'
@@ -47,7 +37,7 @@ publishing {
     }
 }
 
- clean {
+clean {
     def homePath = System.properties['user.home']
     delete "${homePath}/.m2/repository/gae"
 }

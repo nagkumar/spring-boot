@@ -5,14 +5,14 @@ option java_package = "gae.piaz.grpc.spec";
 option java_outer_classname = "FirstProto";
 
 service Simple {
-    rpc SayHello (HelloRequest) returns (HelloReply) {
-    }
+  rpc SayHello (HelloRequest) returns (HelloReply) {
+  }
 }
 
 message HelloRequest {
-    string name = 1;
+  string name = 1;
 }
 
 message HelloReply {
-    string message = 1;
+  string message = 1;
 }
