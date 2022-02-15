@@ -39,3 +39,5 @@ dependencies {
     implementation project(':grpc-server')
     implementation project(':app')
 }
+
+defaultTasks 'clean'
