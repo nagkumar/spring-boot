@@ -29,8 +29,6 @@ protobuf {
 publishing {
     publications {
 	maven(MavenPublication) {
-	    groupId = 'gae.piaz'
-	    artifactId = 'spec-pb'
 	    version = '1.1'
 	    from components.java
 	}

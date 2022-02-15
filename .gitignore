@@ -21,11 +21,7 @@ gradlew.bat
 .sts4-cache
 .checkstyle
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+
 
 ### NetBeans ###
 /nbproject/private/
