@@ -6,8 +6,10 @@ bin/
 !**/src/test/**
 logs/
 .gradle
-**/gradle/**
-**build/**
+gradle
+build
+gradlew
+gradlew.bat
 
 ### STS ###
 .apt_generated
