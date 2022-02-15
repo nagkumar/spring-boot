@@ -1,4 +1,4 @@
-package gae.piaz.grpc.client;
+package com.teja.grpc.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

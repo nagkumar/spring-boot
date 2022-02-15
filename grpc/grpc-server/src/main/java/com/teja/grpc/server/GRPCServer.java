@@ -1,8 +1,8 @@
-package gae.piaz.grpc.server;
+package com.teja.grpc.server;
 
-import gae.piaz.grpc.spec.HelloReply;
-import gae.piaz.grpc.spec.HelloRequest;
-import gae.piaz.grpc.spec.SimpleGrpc;
+import com.teja.grpc.spec.HelloReply;
+import com.teja.grpc.spec.HelloRequest;
+import com.teja.grpc.spec.SimpleGrpc;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 @GrpcService
 public class GRPCServer extends SimpleGrpc.SimpleImplBase
 {
-    private static final Logger log = LoggerFactory.getLogger(gae.piaz.grpc.server.GRPCServer.class);
+    private static final Logger log = LoggerFactory.getLogger(GRPCServer.class);
 
     @Override
     public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver)

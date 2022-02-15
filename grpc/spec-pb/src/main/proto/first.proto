@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "gae.piaz.grpc.spec";
+option java_package = "com.teja.grpc.spec";
 option java_outer_classname = "FirstProto";
 
 service Simple {

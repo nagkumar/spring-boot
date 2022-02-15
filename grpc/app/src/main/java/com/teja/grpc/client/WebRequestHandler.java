@@ -1,8 +1,8 @@
-package gae.piaz.grpc.client;
+package com.teja.grpc.client;
 
-import gae.piaz.grpc.spec.HelloReply;
-import gae.piaz.grpc.spec.HelloRequest;
-import gae.piaz.grpc.spec.SimpleGrpc;
+import com.teja.grpc.spec.HelloReply;
+import com.teja.grpc.spec.HelloRequest;
+import com.teja.grpc.spec.SimpleGrpc;
 import io.grpc.StatusRuntimeException;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
