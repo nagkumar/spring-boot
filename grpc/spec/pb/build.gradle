@@ -30,7 +30,7 @@ protobuf {
 publishing {
     publications {
 	maven(MavenPublication) {
-	    groupId =  project.property('group')
+	    groupId = project.property('group')
 	    artifactId = 'spec-pb'
 	    version = '1.1'
 	    from components.java
@@ -40,7 +40,7 @@ publishing {
 
 clean {
     def homePath = System.properties['user.home']
-    delete "${homePath}/.m2/repository/gae"
+    delete "${homePath}/.m2/repository/com/teja/"
 }
 
 defaultTasks 'clean', 'publishToMavenLocal'

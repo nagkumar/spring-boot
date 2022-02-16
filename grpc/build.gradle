@@ -18,8 +18,8 @@ allprojects {
     }
 
     ext {
-        group "com.teja"
-        version "1.0"
+	group "com.teja.sb.grpc"
+	version "1.0"
     }
 }
 
@@ -36,8 +36,8 @@ subprojects {
 }
 
 dependencies {
-    implementation project(':grpc-server')
-    implementation project(':app')
+    implementation project(':servers:grpc')
+    implementation project(':servers:web')
 }
 
 defaultTasks 'clean'

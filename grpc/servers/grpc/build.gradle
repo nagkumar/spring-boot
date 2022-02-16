@@ -1,7 +1,7 @@
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter' // qui non serve starter-web
     implementation 'net.devh:grpc-server-spring-boot-starter:2.13.0.RELEASE' // GRPC SERVER!
-    implementation 'com.teja:spec-pb:1.1'
+    implementation 'com.teja.sb.grpc:spec-pb:1.1'
 }
 
 defaultTasks 'clean', 'bootRun'

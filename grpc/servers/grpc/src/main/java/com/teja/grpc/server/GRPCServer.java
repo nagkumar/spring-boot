@@ -1,8 +1,8 @@
 package com.teja.grpc.server;
 
-import com.teja.grpc.spec.HelloReply;
-import com.teja.grpc.spec.HelloRequest;
-import com.teja.grpc.spec.SimpleGrpc;
+import com.teja.sb.grpc.spec.pb.gen.HelloReply;
+import com.teja.sb.grpc.spec.pb.gen.HelloRequest;
+import com.teja.sb.grpc.spec.pb.gen.SimpleGrpc;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
