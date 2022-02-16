@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':servers:grpc')
+    implementation project(':servers:web')
+}
+
+subprojects {
+    defaultTasks 'clean', 'bootRun'
+}

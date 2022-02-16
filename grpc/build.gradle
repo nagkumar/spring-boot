@@ -36,8 +36,7 @@ subprojects {
 }
 
 dependencies {
-    implementation project(':servers:grpc')
-    implementation project(':servers:web')
+    implementation project(':servers')
 }
 
 defaultTasks 'clean'

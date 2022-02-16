@@ -1,4 +1,5 @@
 rootProject.name = 'spring-boot-grpc-ref'
 include ':spec:pb'
+include ':servers'
 include ':servers:grpc'
 include ':servers:web'
