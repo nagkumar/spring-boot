@@ -9,16 +9,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @GrpcService
-public class GRPCServer extends SimpleGrpc.SimpleImplBase
+public final class GRPCServer extends SimpleGrpc.SimpleImplBase
 {
     private static final Logger log = LoggerFactory.getLogger(GRPCServer.class);
 
     @Override
-    public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver)
+    public void sayHello(final HelloRequest aHelloRequest, final StreamObserver<HelloReply> aHelloReplyStreamObserver)
     {
 	log.info("say hello called");
-	HelloReply reply = HelloReply.newBuilder().setMessage("Hello ==> " + req.getName()).build();
-	responseObserver.onNext(reply);
-	responseObserver.onCompleted();
+	HelloReply reply = HelloReply.newBuilder().setMessage("Hello ==> " + aHelloRequest.getName()).build();
+	aHelloReplyStreamObserver.onNext(reply);
+	aHelloReplyStreamObserver.onCompleted();
     }
 }
