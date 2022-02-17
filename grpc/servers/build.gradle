@@ -1,8 +1,7 @@
-dependencies {
-    implementation project(':servers:grpc')
-    implementation project(':servers:web')
-}
-
 subprojects {
     defaultTasks 'clean', 'bootRun'
+
+    dependencies {
+	implementation 'com.teja.sb.grpc:spec-pb:1.1'
+    }
 }

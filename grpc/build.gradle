@@ -35,8 +35,4 @@ subprojects {
     test {}
 }
 
-dependencies {
-    implementation project(':servers')
-}
-
 defaultTasks 'clean'
