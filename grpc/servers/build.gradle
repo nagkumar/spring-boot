@@ -1,7 +1,10 @@
 subprojects {
-    defaultTasks 'clean', 'bootRun'
-
+    defaultTasks 'clean', 'runDep', 'bootRun'
     dependencies {
 	implementation 'com.teja.sb.grpc:spec-pb:1.1'
+    }
+
+    task runDep {
+	dependsOn(":spec:pb:publishToMavenLocal")
     }
 }
