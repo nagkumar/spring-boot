@@ -7,6 +7,7 @@
     <list default="true" id="d7d21b37-133e-46d5-8f06-4dd227e476d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servers/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/servers/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servers/grpc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/servers/grpc/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter' // qui non serve starter-web
-    implementation 'net.devh:grpc-server-spring-boot-starter:2.13.0.RELEASE' // GRPC SERVER!
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'net.devh:grpc-server-spring-boot-starter:2.13.0.RELEASE'
 }
