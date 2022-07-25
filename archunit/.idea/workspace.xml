@@ -6,19 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/TestControllerRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/archunit/TestControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/TestModelRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/archunit/TestModels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/test/TestRepositoryRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/test/archunit/TestRepositories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/test/TestServiceRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/test/archunit/TestServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/TestCyclicDependencyRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/TestCyclicDependency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/TestGeneralCodingRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/TestGeneralCoding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/ArchUnitConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/ArchUnitConsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/CustomConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/CustomConditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/structs/ClassesArchUnitRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/ClassesRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/structs/ConstructorsArchUnitRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/ConstructorsRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/structs/FieldsArchUnitRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/FieldsRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/utils/structs/MethodsArchUnitRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/MethodsRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/archunit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/archunit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/ArchUnitSBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/ArchUnitSBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/archunit/TestControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controller/test/archunit/TestControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/ClientEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/ClientPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/EmailType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/PhoneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/archunit/TestModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/test/archunit/TestModels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/test/archunit/TestRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repository/test/archunit/TestRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/test/archunit/TestServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/service/test/archunit/TestServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/TestCyclicDependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/TestCyclicDependency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/TestGeneralCoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/TestGeneralCoding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/ArchUnitConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/ArchUnitConsts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/CustomConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/CustomConditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/ClassesRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/structs/ClassesRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/ConstructorsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/structs/ConstructorsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/FieldsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/structs/FieldsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/test/archunit/utils/structs/MethodsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/utils/structs/MethodsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/StringConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/utils/StringConsts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/archunit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/test/archunit/resources/archunit.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +82,21 @@
       <recent name="com.tejasoft.sboot.archunit.test.utils.structs.FieldsArchUnitRules" />
       <recent name="com.tejasoft.sboot.archunit.test.utils.classes.ClassArchUnit" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\DWork\osource\spring-boot\archunit\src\main\java\com\tejasoft\sboot\resources" />
+      <recent name="G:\DWork\osource\spring-boot\archunit\src\main\java\com\tejasoft\sboot\api\test\archunit\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tejasoft.sboot.archunit.test.utils.classes" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="ArchUnitSBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.archunit.ArchUnitSBootApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.api.ArchUnitSBootApplication" />
       <module name="sboot-api-archunit.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tejasoft.sboot.archunit.*" />
+          <option name="PATTERN" value="com.tejasoft.sboot.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,7 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ArchUnitSBootApplication" />
+        <item itemvalue="Application.com.tejasoft.sboot.ArchUnitSBootApplication" />
       </list>
     </recent_temporary>
   </component>
