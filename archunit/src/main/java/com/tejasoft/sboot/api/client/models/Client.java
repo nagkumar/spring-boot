@@ -1,7 +1,7 @@
 package com.tejasoft.sboot.api.client.models;
 
 import com.google.common.base.Objects;
-import com.tejasoft.sboot.api.utils.StringConsts;
+import com.tejasoft.sboot.api.utils.APIConsts;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -29,10 +29,10 @@ public final class Client extends Base
     @Column(nullable = true, length = 100)
     private String documentNumber;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = StringConsts.CLIENT, orphanRemoval = true, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = APIConsts.CLIENT, orphanRemoval = true, cascade = CascadeType.ALL)
     private List<ClientPhone> phones;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = StringConsts.CLIENT, orphanRemoval = true, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = APIConsts.CLIENT, orphanRemoval = true, cascade = CascadeType.ALL)
     private List<ClientEmail> emails;
 
     @Column(nullable = true, length = 100)

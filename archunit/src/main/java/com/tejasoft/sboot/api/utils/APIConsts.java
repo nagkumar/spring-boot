@@ -1,6 +1,6 @@
 package com.tejasoft.sboot.api.utils;
 
-public final class StringConsts
+public final class APIConsts
 {
     public static final String SLASH = "/";
     public static final String ID = "id";

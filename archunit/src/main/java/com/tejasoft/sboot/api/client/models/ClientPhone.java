@@ -1,7 +1,7 @@
 package com.tejasoft.sboot.api.client.models;
 
 import com.google.common.base.Objects;
-import com.tejasoft.sboot.api.utils.StringConsts;
+import com.tejasoft.sboot.api.utils.APIConsts;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = StringConsts.CLIENT_PHONE)
+@Table(name = APIConsts.CLIENT_PHONE)
 public final class ClientPhone extends Base
 {
     private static final long serialVersionUID = 1396542167093193958L;
