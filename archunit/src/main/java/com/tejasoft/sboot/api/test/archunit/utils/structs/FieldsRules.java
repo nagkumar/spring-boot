@@ -11,7 +11,6 @@ import java.util.Map;
 
 public final class FieldsRules
 {
-    //Fields
     public static ArchRule fieldsShouldHaveGetterRule(final Map<String, String> aExclusions,
 						      final String... aPackageNames)
     {

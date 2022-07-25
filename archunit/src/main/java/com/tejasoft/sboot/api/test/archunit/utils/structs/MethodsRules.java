@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public final class MethodsRules
 {
-    //Methods
     public static ArchRule beanMethodsAreNotAllowedRule(final String aPackageName)
     {
 	return ArchRuleDefinition.methods().that().areDeclaredInClassesThat()

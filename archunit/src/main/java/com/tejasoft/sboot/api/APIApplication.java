@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({"com.tejasoft.sboot.archunit"})
-public class ArchUnitSBootApplication
+public class APIApplication
 {
     public static void main(final String[] aArgs)
     {
-	SpringApplication.run(ArchUnitSBootApplication.class, aArgs);
+	SpringApplication.run(APIApplication.class, aArgs);
     }
 }

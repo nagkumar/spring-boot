@@ -5,7 +5,6 @@ import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 
 public final class ConstructorsRules
 {
-    //Constructors
     public static ArchRule publicConstructorsRule(final String aPackageName)
     {
 	return ArchRuleDefinition.constructors().that().areDeclaredInClassesThat()

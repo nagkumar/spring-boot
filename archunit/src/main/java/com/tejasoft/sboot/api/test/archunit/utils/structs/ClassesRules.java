@@ -14,7 +14,6 @@ import java.util.Arrays;
 
 public final class ClassesRules
 {
-    //Classes
     public static ArchRule interfacesAreOnlyAllowedRule(final String aPackageName, String... aExcludedPackages)
     {
 	//aExcludedPackages = (aExcludedPackages == null) ? TestArchUnitConsts.TEST_PACKAGE : new String[0];
