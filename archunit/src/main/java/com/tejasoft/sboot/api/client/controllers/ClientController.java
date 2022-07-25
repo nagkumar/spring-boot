@@ -1,6 +1,7 @@
-package com.tejasoft.sboot.api.controllers;
+package com.tejasoft.sboot.api.client.controllers;
 
-import com.tejasoft.sboot.api.services.ClientService;
+import com.tejasoft.sboot.api.client.services.ClientService;
+import com.tejasoft.sboot.api.utils.StringConsts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/client")
+@RequestMapping(value = StringConsts.CLIENT_PATH)
 public final class ClientController
 {
     private final ClientService clientService;
@@ -22,8 +23,8 @@ public final class ClientController
 	clientService = aClientService;
     }
 
-    @DeleteMapping(value = "/{id}")
-    public @ResponseBody ResponseEntity<Boolean> delete(@PathVariable("id") Long aId)
+    @DeleteMapping(value = StringConsts.ID_PATH)
+    public @ResponseBody ResponseEntity<Boolean> delete(@PathVariable(StringConsts.ID) Long aId)
     {
 	return new ResponseEntity<>(clientService.delete(aId), HttpStatus.OK);
     }

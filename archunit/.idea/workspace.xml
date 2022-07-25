@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controllers/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controller/test/archunit/TestControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controllers/test/archunit/TestControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/ClientEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/ClientPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/EmailType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/PhoneType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/model/test/archunit/TestModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/test/archunit/TestModels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repositories/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repository/test/archunit/TestRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repositories/test/archunit/TestRepositories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/services/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/service/test/archunit/TestServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/services/test/archunit/TestServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/SBTAPIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/APIApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/controllers/test/archunit/TestControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/test/archunit/TestControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/EmailType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/PhoneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/models/test/archunit/TestModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/test/archunit/TestModels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/repositories/test/archunit/TestRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/test/archunit/TestRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/services/test/archunit/TestServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/test/archunit/TestServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/utils/StringConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/utils/StringConsts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tejasoft.sboot.api.utils.StringConsts" />
       <recent name="com.tejasoft.sboot.archunit.test.utils.structs.MethodsArchUnitRules" />
       <recent name="com.tejasoft.sboot.archunit.test.utils.structs.ConstructorsArchUnitRules" />
       <recent name="com.tejasoft.sboot.archunit.test.utils.structs.FieldsArchUnitRules" />
@@ -77,8 +81,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="SBTAPIApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.api.SBTAPIApplication" />
+    <configuration name="APIApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.api.APIApplication" />
       <module name="sboot-api-archunit.main" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SBTAPIApplication" />
+        <item itemvalue="Application.SBootAPIApplication" />
       </list>
     </recent_temporary>
   </component>

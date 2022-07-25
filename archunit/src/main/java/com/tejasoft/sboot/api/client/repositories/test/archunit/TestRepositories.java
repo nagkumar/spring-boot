@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.repositories.test.archunit;
+package com.tejasoft.sboot.api.client.repositories.test.archunit;
 
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;

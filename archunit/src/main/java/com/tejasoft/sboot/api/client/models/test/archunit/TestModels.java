@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.models.test.archunit;
+package com.tejasoft.sboot.api.client.models.test.archunit;
 
 import com.tejasoft.sboot.api.test.archunit.utils.structs.FieldsRules;
 import com.tngtech.archunit.core.importer.ImportOption;

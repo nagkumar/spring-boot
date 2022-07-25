@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.services.test.archunit;
+package com.tejasoft.sboot.api.client.services.test.archunit;
 
 import com.tejasoft.sboot.api.test.archunit.utils.ArchUnitConsts;
 import com.tejasoft.sboot.api.test.archunit.utils.structs.ClassesRules;
