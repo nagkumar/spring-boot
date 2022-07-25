@@ -1,9 +1,9 @@
-package com.tejasoft.sboot.archunit.test.utils.structs;
+package com.tejasoft.sboot.archunit.test.archunit.utils.structs;
 
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 
-public final class ConstructorsArchUnitRules
+public final class ConstructorsRules
 {
     //Constructors
     public static ArchRule publicConstructorsRule(final String aPackageName)

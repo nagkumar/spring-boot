@@ -1,10 +1,10 @@
-package com.tejasoft.sboot.archunit.service.test;
+package com.tejasoft.sboot.archunit.service.test.archunit;
 
-import com.tejasoft.sboot.archunit.test.utils.ArchUnitConsts;
-import com.tejasoft.sboot.archunit.test.utils.structs.ClassesArchUnitRules;
-import com.tejasoft.sboot.archunit.test.utils.structs.ConstructorsArchUnitRules;
-import com.tejasoft.sboot.archunit.test.utils.structs.FieldsArchUnitRules;
-import com.tejasoft.sboot.archunit.test.utils.structs.MethodsArchUnitRules;
+import com.tejasoft.sboot.archunit.test.archunit.utils.ArchUnitConsts;
+import com.tejasoft.sboot.archunit.test.archunit.utils.structs.ClassesRules;
+import com.tejasoft.sboot.archunit.test.archunit.utils.structs.ConstructorsRules;
+import com.tejasoft.sboot.archunit.test.archunit.utils.structs.FieldsRules;
+import com.tejasoft.sboot.archunit.test.archunit.utils.structs.MethodsRules;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
@@ -13,11 +13,11 @@ import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import org.springframework.stereotype.Service;
 
 @AnalyzeClasses(packages = ArchUnitConsts.DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
-final class TestServiceRules
+final class TestServices
 {
     // Classes
     @ArchTest
-    static final ArchRule component_annotation_is_not_allowed = ClassesArchUnitRules.componentAnnotationIsNotAllowedRule(
+    static final ArchRule component_annotation_is_not_allowed = ClassesRules.componentAnnotationIsNotAllowedRule(
 	    ArchUnitConsts.SERVICE_PACKAGE);
 
     @ArchTest
@@ -33,23 +33,23 @@ final class TestServiceRules
     // Fields
     @ArchTest
     static final ArchRule fields_should_not_be_public =
-	    FieldsArchUnitRules.fieldsShouldNotBePublic(ArchUnitConsts.SERVICE_PACKAGE);
+	    FieldsRules.fieldsShouldNotBePublic(ArchUnitConsts.SERVICE_PACKAGE);
 
     // Constructors
     @ArchTest
     static final ArchRule constructors_should_not_be_private =
-	    ConstructorsArchUnitRules.publicConstructorsRule(ArchUnitConsts.SERVICE_PACKAGE);
+	    ConstructorsRules.publicConstructorsRule(ArchUnitConsts.SERVICE_PACKAGE);
 
     // Methods
     @ArchTest
     static final ArchRule bean_methods_are_not_allowed =
-	    MethodsArchUnitRules.beanMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
+	    MethodsRules.beanMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
 
     @ArchTest
     static final ArchRule private_methods_are_not_allowed =
-	    MethodsArchUnitRules.privateMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
+	    MethodsRules.privateMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
 
     @ArchTest
     static final ArchRule static_methods_are_not_allowed =
-	    MethodsArchUnitRules.staticMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
+	    MethodsRules.staticMethodsAreNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
 }

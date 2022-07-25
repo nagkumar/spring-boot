@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.archunit.test.utils.structs;
+package com.tejasoft.sboot.archunit.test.archunit.utils.structs;
 
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 
-public final class ClassesArchUnitRules
+public final class ClassesRules
 {
     //Classes
     public static ArchRule interfacesAreOnlyAllowedRule(final String aPackageName, String... aExcludedPackages)

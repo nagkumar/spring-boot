@@ -1,7 +1,7 @@
-package com.tejasoft.sboot.archunit.test.utils.structs;
+package com.tejasoft.sboot.archunit.test.archunit.utils.structs;
 
 import com.google.common.collect.Maps;
-import com.tejasoft.sboot.archunit.test.utils.CustomConditions;
+import com.tejasoft.sboot.archunit.test.archunit.utils.CustomConditions;
 import com.tngtech.archunit.core.domain.JavaModifier;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
@@ -9,7 +9,7 @@ import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import java.util.Arrays;
 import java.util.Map;
 
-public final class FieldsArchUnitRules
+public final class FieldsRules
 {
     //Fields
     public static ArchRule fieldsShouldHaveGetterRule(final Map<String, String> aExclusions,

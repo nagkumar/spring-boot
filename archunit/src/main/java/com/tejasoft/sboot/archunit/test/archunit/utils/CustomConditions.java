@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.archunit.test.utils;
+package com.tejasoft.sboot.archunit.test.archunit.utils;
 
 import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.domain.JavaField;

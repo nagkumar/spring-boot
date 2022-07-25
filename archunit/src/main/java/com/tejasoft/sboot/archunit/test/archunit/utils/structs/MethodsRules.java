@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.archunit.test.utils.structs;
+package com.tejasoft.sboot.archunit.test.archunit.utils.structs;
 
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 
-public final class MethodsArchUnitRules
+public final class MethodsRules
 {
     //Methods
     public static ArchRule beanMethodsAreNotAllowedRule(final String aPackageName)
