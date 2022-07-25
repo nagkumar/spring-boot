@@ -26,16 +26,15 @@ final class TestModelRules
 			      .resideInAnyPackage(MODEL_PACKAGE)
 			      .and().areNotMemberClasses()
 			      .should(HAVE_EQUALS_AND_HASH_CODE)
-			      .because(
-				      "Model classes should override equals and hashCode methods");
+			      .because("Model classes should override equals and hashCode methods");
 
     @ArchTest
     static final ArchRule springAnnotationsAreNotAllowed = springAnnotationsClassesAreNotAllowedRule(MODEL_PACKAGE);
 
     //Fields
     @ArchTest
-    static final ArchRule fieldsShouldHaveGetter = TestCommonRules.fieldsShouldHaveGetterRule(Maps.newHashMap(),
-											      MODEL_PACKAGE);
+    static final ArchRule fieldsShouldHaveGetter =
+	    TestCommonRules.fieldsShouldHaveGetterRule(Maps.newHashMap(), MODEL_PACKAGE);
 
     @ArchTest
     static final ArchRule publicAndFinalFieldsAreNotAllowed = publicAndFinalFieldsAreNotAllowedRule(MODEL_PACKAGE);

@@ -5,43 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/TestControllerRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/TestModelRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/test/TestRepositoryRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/test/TestServiceRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/test/TestCommonRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/test/arch/TestCyclicDependencyRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/test/arch/TestGeneralCodingRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/archunit.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/ExampleArchunitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/ArchUnitSBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/ClientEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/ClientPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/EmailType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/model/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/PhoneType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/archunit/utils/StringConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/StringConsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/ArchitectureConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/test/TestArchUnitConsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/CommonRules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/ControllerRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/CustomConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/utils/test/TestCustomConditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/CyclicDependencyRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/GeneralCodingRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/ModelRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/RepositoryRulesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/archunit/architecture/ServiceRulesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/TestControllerRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/controller/test/TestControllerRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/TestModelRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/archunit/model/test/TestModelRules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
