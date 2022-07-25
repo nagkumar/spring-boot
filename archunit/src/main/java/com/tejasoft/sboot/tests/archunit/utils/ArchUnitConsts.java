@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.tests.archunit.utils;
+package com.tejasoft.sboot.tests.archunit.utils;
 
 public final class ArchUnitConsts
 {

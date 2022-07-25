@@ -1,7 +1,7 @@
-package com.tejasoft.sboot.api.tests.archunit.utils.structs;
+package com.tejasoft.sboot.tests.archunit.utils.structs;
 
 import com.google.common.collect.Maps;
-import com.tejasoft.sboot.api.tests.archunit.utils.CustomConditions;
+import com.tejasoft.sboot.tests.archunit.utils.CustomConditions;
 import com.tngtech.archunit.core.domain.JavaModifier;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;

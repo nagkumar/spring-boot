@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.ANNOTATED_EXPLANATION;
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.CONTROLLER_PACKAGE;
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.CONTROLLER_SUFFIX;
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.ClassesRules.componentAnnotationIsNotAllowedRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.ConstructorsRules.publicConstructorsRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.FieldsRules.fieldsShouldNotBePublic;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules.beanMethodsAreNotAllowedRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules.privateMethodsAreNotAllowedRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules.staticMethodsAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.ANNOTATED_EXPLANATION;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.CONTROLLER_PACKAGE;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.CONTROLLER_SUFFIX;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.ClassesRules.componentAnnotationIsNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.ConstructorsRules.publicConstructorsRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.FieldsRules.fieldsShouldNotBePublic;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.MethodsRules.beanMethodsAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.MethodsRules.privateMethodsAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.MethodsRules.staticMethodsAreNotAllowedRule;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestControllers

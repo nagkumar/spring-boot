@@ -1,6 +1,6 @@
 package com.tejasoft.sboot.api.client.models.tests.archunit;
 
-import com.tejasoft.sboot.api.tests.archunit.utils.structs.FieldsRules;
+import com.tejasoft.sboot.tests.archunit.utils.structs.FieldsRules;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
@@ -8,13 +8,13 @@ import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import com.tngtech.archunit.thirdparty.com.google.common.collect.Maps;
 
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
-import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.MODEL_PACKAGE;
-import static com.tejasoft.sboot.api.tests.archunit.utils.CustomConditions.HAVE_EQUALS_AND_HASH_CODE;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.ClassesRules.springAnnotationsClassesAreNotAllowedRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.FieldsRules.publicAndFinalFieldsAreNotAllowedRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules.methodsShouldBePublicRule;
-import static com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules.staticMethodsAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.tests.archunit.utils.ArchUnitConsts.MODEL_PACKAGE;
+import static com.tejasoft.sboot.tests.archunit.utils.CustomConditions.HAVE_EQUALS_AND_HASH_CODE;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.ClassesRules.springAnnotationsClassesAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.FieldsRules.publicAndFinalFieldsAreNotAllowedRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.MethodsRules.methodsShouldBePublicRule;
+import static com.tejasoft.sboot.tests.archunit.utils.structs.MethodsRules.staticMethodsAreNotAllowedRule;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestModels

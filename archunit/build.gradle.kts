@@ -41,7 +41,7 @@ sourceSets {
 	}
 
 	resources {
-	    srcDir("src/main/java/com/tejasoft/sboot/api/res")
+	    srcDir("src/main/java/com/tejasoft/sboot/res")
 	    exclude("**/tests/**")
 	}
     }

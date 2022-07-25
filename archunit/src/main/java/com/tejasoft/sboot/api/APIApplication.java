@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.tejasoft.sboot.archunit"})
+@ComponentScan({"com.tejasoft.sboot.api"})
 public class APIApplication
 {
     public static void main(final String[] aArgs)
