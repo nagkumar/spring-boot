@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.controller.test.archunit;
+package com.tejasoft.sboot.api.controllers.test.archunit;
 
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
@@ -62,15 +62,19 @@ final class TestControllers
 
     @ArchTest
     static final ArchRule methods_should_return_response_entity =
-	    ArchRuleDefinition.methods().that().arePublic().and().areDeclaredInClassesThat().resideInAPackage(
-		    CONTROLLER_PACKAGE).should().haveRawReturnType(ResponseEntity.class).because(
-		    "Controller endpoints should return a ResponseEntity object");
+	    ArchRuleDefinition.methods().that().arePublic().and().areDeclaredInClassesThat()
+			      .resideInAPackage(CONTROLLER_PACKAGE).should()
+			      .haveRawReturnType(ResponseEntity.class)
+			      .because("Controller endpoints should return a ResponseEntity object");
 
     @ArchTest
     static final ArchRule methods_should_be_annotated_with_valid_annotations =
-	    ArchRuleDefinition.methods().that().arePublic().and().areDeclaredInClassesThat().resideInAPackage(
-		    CONTROLLER_PACKAGE).should().beAnnotatedWith(PostMapping.class).orShould().beAnnotatedWith(
-		    GetMapping.class).orShould().beAnnotatedWith(DeleteMapping.class).orShould().beAnnotatedWith(
-		    PatchMapping.class).orShould().beAnnotatedWith(PutMapping.class).because(
-		    "Controller methods should be annotated only with valid options of REST (POST, PUT, PATCH, GET, and DELETE)");
+	    ArchRuleDefinition.methods().that().arePublic().and().areDeclaredInClassesThat()
+			      .resideInAPackage(CONTROLLER_PACKAGE).should()
+			      .beAnnotatedWith(PostMapping.class).orShould()
+			      .beAnnotatedWith(GetMapping.class).orShould()
+			      .beAnnotatedWith(DeleteMapping.class).orShould()
+			      .beAnnotatedWith(PatchMapping.class).orShould().beAnnotatedWith(PutMapping.class)
+			      .because(
+				      "Controller methods should be annotated only with valid options of REST (POST, PUT, PATCH, GET, and DELETE)");
 }

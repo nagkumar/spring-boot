@@ -1,7 +1,7 @@
-package com.tejasoft.sboot.api.service;
+package com.tejasoft.sboot.api.services;
 
-import com.tejasoft.sboot.api.model.Client;
-import com.tejasoft.sboot.api.repository.ClientRepository;
+import com.tejasoft.sboot.api.models.Client;
+import com.tejasoft.sboot.api.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

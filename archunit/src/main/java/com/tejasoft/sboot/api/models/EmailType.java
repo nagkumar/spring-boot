@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.model;
+package com.tejasoft.sboot.api.models;
 
 import com.google.common.base.Objects;
 
@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "phoneType")
-public final class PhoneType extends Base
+@Table(name = "emailType")
+public final class EmailType extends Base
 {
     private static final long serialVersionUID = 1697687804373017457L;
 

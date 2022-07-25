@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.model;
+package com.tejasoft.sboot.api.models;
 
 import com.google.common.base.Objects;
 import com.tejasoft.sboot.api.utils.StringConsts;

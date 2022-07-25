@@ -1,6 +1,6 @@
-package com.tejasoft.sboot.api.controller;
+package com.tejasoft.sboot.api.controllers;
 
-import com.tejasoft.sboot.api.service.ClientService;
+import com.tejasoft.sboot.api.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

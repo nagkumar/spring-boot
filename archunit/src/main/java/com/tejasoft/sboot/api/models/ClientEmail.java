@@ -1,7 +1,6 @@
-package com.tejasoft.sboot.api.model;
+package com.tejasoft.sboot.api.models;
 
 import com.google.common.base.Objects;
-import com.tejasoft.sboot.api.utils.StringConsts;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,38 +9,38 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = StringConsts.CLIENT_PHONE)
-public final class ClientPhone extends Base
+@Table(name = "clientEmail")
+public final class ClientEmail extends Base
 {
     private static final long serialVersionUID = 1396542167093193958L;
 
     @Column(nullable = false, length = 80)
-    private String number;
+    private String email;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private PhoneType phoneType;
+    private EmailType emailType;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Client client;
 
-    public String getNumber()
+    public String getEmail()
     {
-	return number;
+	return email;
     }
 
-    public void setNumber(final String aNumber)
+    public void setEmail(final String aEmail)
     {
-	number = aNumber;
+	email = aEmail;
     }
 
-    public PhoneType getPhoneType()
+    public EmailType getEmailType()
     {
-	return phoneType;
+	return emailType;
     }
 
-    public void setPhoneType(final PhoneType aPhoneType)
+    public void setEmailType(final EmailType aEmailType)
     {
-	phoneType = aPhoneType;
+	emailType = aEmailType;
     }
 
     public Client getClient()
@@ -60,8 +59,8 @@ public final class ClientPhone extends Base
 	return Objects.hashCode(getId(),
 				getActive(),
 				getVersion(),
-				number,
-				phoneType,
+				email,
+				emailType,
 				client);
     }
 

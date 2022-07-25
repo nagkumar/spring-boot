@@ -1,6 +1,6 @@
-package com.tejasoft.sboot.api.repository;
+package com.tejasoft.sboot.api.repositories;
 
-import com.tejasoft.sboot.api.model.Client;
+import com.tejasoft.sboot.api.models.Client;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
