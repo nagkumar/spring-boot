@@ -34,10 +34,12 @@ final class TestControllers
 
     @ArchTest
     static final ArchRule classes_should_be_annotated =
-	    ArchRuleDefinition.classes().that().resideInAPackage(
-		    CONTROLLER_PACKAGE).should().beAnnotatedWith(RestController.class).andShould().notBeAnnotatedWith(
-		    Controller.class).because(String.format(ANNOTATED_EXPLANATION, CONTROLLER_SUFFIX,
-							    "@RestController") + ", and not with @Controller");
+	    ArchRuleDefinition.classes().that()
+			      .resideInAPackage(CONTROLLER_PACKAGE).should()
+			      .beAnnotatedWith(RestController.class).andShould()
+			      .notBeAnnotatedWith(Controller.class)
+			      .because(String.format(ANNOTATED_EXPLANATION, CONTROLLER_SUFFIX,
+						     "@RestController") + ", and not with @Controller");
 
 
     // Fields
