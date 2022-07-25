@@ -17,8 +17,8 @@ final class TestServices
 {
     // Classes
     @ArchTest
-    static final ArchRule component_annotation_is_not_allowed = ClassesRules.componentAnnotationIsNotAllowedRule(
-	    ArchUnitConsts.SERVICE_PACKAGE);
+    static final ArchRule component_annotation_is_not_allowed =
+	    ClassesRules.componentAnnotationIsNotAllowedRule(ArchUnitConsts.SERVICE_PACKAGE);
 
     @ArchTest
     static final ArchRule classes_should_be_annotated =
