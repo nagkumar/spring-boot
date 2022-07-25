@@ -73,8 +73,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="APIApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.api.APIApplication" />
+    <configuration name="SBTAPIApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tejasoft.sboot.api.SBTAPIApplication" />
       <module name="sboot-api-archunit.main" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.APIApplication" />
+        <item itemvalue="Application.SBTAPIApplication" />
       </list>
     </recent_temporary>
   </component>
