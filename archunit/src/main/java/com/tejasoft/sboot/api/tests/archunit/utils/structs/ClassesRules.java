@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.test.archunit.utils.structs;
+package com.tejasoft.sboot.api.tests.archunit.utils.structs;
 
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;

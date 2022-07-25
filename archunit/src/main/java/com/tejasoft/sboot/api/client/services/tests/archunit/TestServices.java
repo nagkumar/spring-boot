@@ -1,10 +1,10 @@
-package com.tejasoft.sboot.api.client.services.test.archunit;
+package com.tejasoft.sboot.api.client.services.tests.archunit;
 
-import com.tejasoft.sboot.api.test.archunit.utils.ArchUnitConsts;
-import com.tejasoft.sboot.api.test.archunit.utils.structs.ClassesRules;
-import com.tejasoft.sboot.api.test.archunit.utils.structs.ConstructorsRules;
-import com.tejasoft.sboot.api.test.archunit.utils.structs.FieldsRules;
-import com.tejasoft.sboot.api.test.archunit.utils.structs.MethodsRules;
+import com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts;
+import com.tejasoft.sboot.api.tests.archunit.utils.structs.ClassesRules;
+import com.tejasoft.sboot.api.tests.archunit.utils.structs.ConstructorsRules;
+import com.tejasoft.sboot.api.tests.archunit.utils.structs.FieldsRules;
+import com.tejasoft.sboot.api.tests.archunit.utils.structs.MethodsRules;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;

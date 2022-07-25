@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.test.archunit;
+package com.tejasoft.sboot.api.tests.archunit;
 
 import ch.qos.logback.classic.Logger;
 import com.tngtech.archunit.core.domain.JavaModifier;
@@ -10,7 +10,7 @@ import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import com.tngtech.archunit.library.GeneralCodingRules;
 import org.springframework.context.annotation.Bean;
 
-import static com.tejasoft.sboot.api.test.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestGeneralCoding

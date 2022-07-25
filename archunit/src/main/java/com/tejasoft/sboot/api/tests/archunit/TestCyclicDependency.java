@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.api.test.archunit;
+package com.tejasoft.sboot.api.tests.archunit;
 
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
@@ -6,7 +6,7 @@ import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.library.dependencies.SlicesRuleDefinition;
 
-import static com.tejasoft.sboot.api.test.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.api.tests.archunit.utils.ArchUnitConsts.DEFAULT_PACKAGE;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestCyclicDependency

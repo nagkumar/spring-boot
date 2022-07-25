@@ -37,23 +37,23 @@ sourceSets {
     main {
 	java {
 	    srcDir("src/main/java")
-	    exclude("**/test/**")
+	    exclude("**/tests/**")
 	}
 
 	resources {
 	    srcDir("src/main/java/com/tejasoft/sboot/api/res")
-	    exclude("**/test/**")
+	    exclude("**/tests/**")
 	}
     }
 
     test {
 	java {
 	    srcDir("src/main/java")
-	    include("**/test/**")
+	    include("**/tests/**")
 	}
 
 	resources {
-	    srcDir("src/main/java/com/tejasoft/sboot/api/test/archunit/res")
+	    srcDir("src/main/java/com/tejasoft/sboot/api/tests/archunit/res")
 	}
     }
 }
