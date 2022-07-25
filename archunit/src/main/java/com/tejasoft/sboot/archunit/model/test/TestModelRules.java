@@ -1,6 +1,6 @@
 package com.tejasoft.sboot.archunit.model.test;
 
-import com.tejasoft.sboot.archunit.utils.test.TestCommonRules;
+import com.tejasoft.sboot.archunit.test.utils.structs.FieldsArchUnitRules;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
@@ -8,13 +8,13 @@ import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import com.tngtech.archunit.thirdparty.com.google.common.collect.Maps;
 
-import static com.tejasoft.sboot.archunit.utils.test.TestArchUnitConsts.DEFAULT_PACKAGE;
-import static com.tejasoft.sboot.archunit.utils.test.TestArchUnitConsts.MODEL_PACKAGE;
-import static com.tejasoft.sboot.archunit.utils.test.TestCommonRules.methodsShouldBePublicRule;
-import static com.tejasoft.sboot.archunit.utils.test.TestCommonRules.publicAndFinalFieldsAreNotAllowedRule;
-import static com.tejasoft.sboot.archunit.utils.test.TestCommonRules.springAnnotationsClassesAreNotAllowedRule;
-import static com.tejasoft.sboot.archunit.utils.test.TestCommonRules.staticMethodsAreNotAllowedRule;
-import static com.tejasoft.sboot.archunit.utils.test.TestCustomConditions.HAVE_EQUALS_AND_HASH_CODE;
+import static com.tejasoft.sboot.archunit.test.utils.ArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.archunit.test.utils.ArchUnitConsts.MODEL_PACKAGE;
+import static com.tejasoft.sboot.archunit.test.utils.CustomConditions.HAVE_EQUALS_AND_HASH_CODE;
+import static com.tejasoft.sboot.archunit.test.utils.structs.ClassesArchUnitRules.springAnnotationsClassesAreNotAllowedRule;
+import static com.tejasoft.sboot.archunit.test.utils.structs.FieldsArchUnitRules.publicAndFinalFieldsAreNotAllowedRule;
+import static com.tejasoft.sboot.archunit.test.utils.structs.MethodsArchUnitRules.methodsShouldBePublicRule;
+import static com.tejasoft.sboot.archunit.test.utils.structs.MethodsArchUnitRules.staticMethodsAreNotAllowedRule;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestModelRules
@@ -34,7 +34,7 @@ final class TestModelRules
     //Fields
     @ArchTest
     static final ArchRule fieldsShouldHaveGetter =
-	    TestCommonRules.fieldsShouldHaveGetterRule(Maps.newHashMap(), MODEL_PACKAGE);
+	    FieldsArchUnitRules.fieldsShouldHaveGetterRule(Maps.newHashMap(), MODEL_PACKAGE);
 
     @ArchTest
     static final ArchRule publicAndFinalFieldsAreNotAllowed = publicAndFinalFieldsAreNotAllowedRule(MODEL_PACKAGE);

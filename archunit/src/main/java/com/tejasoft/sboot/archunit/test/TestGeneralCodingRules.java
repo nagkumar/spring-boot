@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.archunit.utils.test.arch;
+package com.tejasoft.sboot.archunit.test;
 
 import ch.qos.logback.classic.Logger;
 import com.tngtech.archunit.core.domain.JavaModifier;
@@ -10,26 +10,27 @@ import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 import com.tngtech.archunit.library.GeneralCodingRules;
 import org.springframework.context.annotation.Bean;
 
-import static com.tejasoft.sboot.archunit.utils.test.TestArchUnitConsts.DEFAULT_PACKAGE;
+import static com.tejasoft.sboot.archunit.test.utils.ArchUnitConsts.DEFAULT_PACKAGE;
 
 @AnalyzeClasses(packages = DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 final class TestGeneralCodingRules
 {
     //Classes
     @ArchTest
-    static final ArchRule noClassesShouldUseJodatime = GeneralCodingRules.NO_CLASSES_SHOULD_USE_JODATIME
-	    .because("Use java.time objects instead");
+    static final ArchRule noClassesShouldUseJodatime =
+	    GeneralCodingRules.NO_CLASSES_SHOULD_USE_JODATIME.because("Use java.time objects instead");
 
     @ArchTest
     static final ArchRule noAccessToStandardStreams = GeneralCodingRules.NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS;
 
     @ArchTest
-    static final ArchRule noGenericExceptions = GeneralCodingRules.NO_CLASSES_SHOULD_THROW_GENERIC_EXCEPTIONS
-	    .because("Throw AlmundoException or any child of this instead");
+    static final ArchRule noGenericExceptions =
+	    GeneralCodingRules.NO_CLASSES_SHOULD_THROW_GENERIC_EXCEPTIONS
+		    .because("Throw AlmundoException or any child of this instead");
 
     @ArchTest
-    static final ArchRule noJavaUtilLogging = GeneralCodingRules.NO_CLASSES_SHOULD_USE_JAVA_UTIL_LOGGING
-	    .because("Use org.slf4j.Logger instead");
+    static final ArchRule noJavaUtilLogging =
+	    GeneralCodingRules.NO_CLASSES_SHOULD_USE_JAVA_UTIL_LOGGING.because("Use org.slf4j.Logger instead");
 
     //Fields
     @ArchTest
@@ -48,8 +49,7 @@ final class TestGeneralCodingRules
 			      .and().doNotHaveName("serialVersionUID")
 			      .and().doNotHaveModifier(JavaModifier.SYNTHETIC)
 			      .should().haveNameMatching(".*^[A-Z].*")
-			      .because(
-				      "Variables with static and final modifiers should be named in uppercase");
+			      .because("Variables with static and final modifiers should be named in uppercase");
 
     //Methods
     @ArchTest

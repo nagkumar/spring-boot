@@ -1,7 +1,7 @@
 package com.tejasoft.sboot.archunit.model;
 
-import com.tejasoft.sboot.archunit.utils.StringConsts;
 import com.google.common.base.Objects;
+import com.tejasoft.sboot.archunit.utils.StringConsts;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

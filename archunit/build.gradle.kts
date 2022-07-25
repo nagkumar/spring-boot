@@ -17,7 +17,7 @@ dependencies {
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
-description = "api-example-archunit"
+description = "sboot-api-archunit"
 
 publishing {
     publications.create<MavenPublication>("maven") {

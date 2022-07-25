@@ -1,4 +1,4 @@
-package com.tejasoft.sboot.archunit.utils.test;
+package com.tejasoft.sboot.archunit.test.utils;
 
 import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.domain.JavaField;
@@ -14,7 +14,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public final class TestCustomConditions
+public final class CustomConditions
 {
     private static final String HAVE_GETTER_DESCRIPTION = "have getter";
     private static final String HAVE_GETTER_AND_SETTER_DESCRIPTION = "have getter and setter";
@@ -31,7 +31,7 @@ public final class TestCustomConditions
     private static final String HASH_CODE_METHOD = "hashCode";
     public static final ArchCondition<JavaClass> HAVE_EQUALS_AND_HASH_CODE = buildClassHaveEqualsAndHashCodeCondition();
 
-    private TestCustomConditions()
+    private CustomConditions()
     {
 
     }
@@ -46,57 +46,54 @@ public final class TestCustomConditions
 	return buildFieldHaveGetterAndSetterCondition(true, exclusions);
     }
 
-    private static ArchCondition<JavaField> buildFieldHaveGetterAndSetterCondition(boolean forceSetters,
-										   Map<String, String> exclusions)
+    private static ArchCondition<JavaField> buildFieldHaveGetterAndSetterCondition(final boolean aForceSetters,
+										   final Map<String, String> aExclusions)
     {
 	return new ArchCondition<JavaField>(
-		forceSetters ? HAVE_GETTER_AND_SETTER_DESCRIPTION : HAVE_GETTER_DESCRIPTION)
+		aForceSetters ? HAVE_GETTER_AND_SETTER_DESCRIPTION : HAVE_GETTER_DESCRIPTION)
 	{
-
 	    @Override
-	    public void check(JavaField field, ConditionEvents events)
+	    public void check(final JavaField aJavaField, final ConditionEvents aConditionEvents)
 	    {
-		Set<String> publicMethods = field.getOwner().getMethods().stream()
-						 .filter(m -> m.getModifiers().contains(JavaModifier.PUBLIC)).map(
-				JavaMember::getName)
-						 .collect(Collectors.toSet());
+		Set<String> publicMethods = aJavaField.getOwner().getMethods().stream()
+						      .filter(m -> m.getModifiers().contains(JavaModifier.PUBLIC))
+						      .map(JavaMember::getName)
+						      .collect(Collectors.toSet());
 
-		String name = field.getName();
+		String name = aJavaField.getName();
 
-		if (exclusions.containsKey(name))
+		if (aExclusions.containsKey(name))
 		{
-		    String className = exclusions.get(name);
-		    if (field.getOwner().getName().equals(className))
+		    String className = aExclusions.get(name);
+		    if (aJavaField.getOwner().getName().equals(className))
 		    {
 			return;
 		    }
 		}
 
-		String getter = calculateGetterPrefix(field.reflect().getType().getName()) + capitalize(name);
+		String lGetter = calculateGetterPrefix(aJavaField.reflect().getType().getName()) + capitalize(name);
 
-		if (!publicMethods.contains(getter))
+		if (!publicMethods.contains(lGetter))
 		{
 		    String message = String
-			    .format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, field.getName(),
-				    field.getOwner().getName(),
+			    .format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, aJavaField.getName(),
+				    aJavaField.getOwner().getName(),
 				    GETTER_PREFIX);
-		    events.add(SimpleConditionEvent.violated(field, message));
+		    aConditionEvents.add(SimpleConditionEvent.violated(aJavaField, message));
 		}
 
-		if (forceSetters)
+		if (aForceSetters)
 		{
 		    String setter = SETTER_PREFIX + capitalize(name);
 
 		    if (!publicMethods.contains(setter))
 		    {
-			String message = String
-				.format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, field.getName(),
-					field.getOwner().getName(),
-					SETTER_PREFIX);
-			events.add(SimpleConditionEvent.violated(field, message));
+			String message =
+				String.format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, aJavaField.getName(),
+					      aJavaField.getOwner().getName(), SETTER_PREFIX);
+			aConditionEvents.add(SimpleConditionEvent.violated(aJavaField, message));
 		    }
 		}
-
 	    }
 	};
     }
@@ -105,7 +102,6 @@ public final class TestCustomConditions
     {
 	return new ArchCondition<JavaClass>(EQUALS_AND_HASH_CODE_DESCRIPTION)
 	{
-
 	    @Override
 	    public void check(JavaClass javaClass, ConditionEvents events)
 	    {
@@ -149,20 +145,20 @@ public final class TestCustomConditions
 	};
     }
 
-    private static String capitalize(String value)
+    private static String capitalize(final String aValue)
     {
-	return value.substring(0, 1).toUpperCase() + value.substring(1);
+	return aValue.substring(0, 1).toUpperCase() + aValue.substring(1);
     }
 
-    private static String calculateGetterPrefix(String type)
+    private static String calculateGetterPrefix(final String aType)
     {
-	return !type.equals(BOOLEAN_TYPE) ? GETTER_PREFIX : IS_PREFIX;
+	return !aType.equals(BOOLEAN_TYPE) ? GETTER_PREFIX : IS_PREFIX;
     }
 
-    private static Optional<JavaMethod> findPublicMethodFromClass(JavaClass javaClass, String methodName)
+    private static Optional<JavaMethod> findPublicMethodFromClass(final JavaClass aJavaClass, final String aMethodName)
     {
-	return javaClass.getMethods().stream()
-			.filter(m -> m.getModifiers().contains(JavaModifier.PUBLIC) && methodName.equals(m.getName()))
-			.findFirst();
+	return aJavaClass.getMethods().stream()
+			 .filter(m -> m.getModifiers().contains(JavaModifier.PUBLIC) && aMethodName.equals(m.getName()))
+			 .findFirst();
     }
 }
