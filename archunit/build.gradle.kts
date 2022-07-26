@@ -1,3 +1,6 @@
+val SRC_ROOT = "src/main/java"
+val TEST_PATTERN = "**/tests/**"
+
 plugins {
     java
     `maven-publish`
@@ -31,29 +34,32 @@ tasks.withType<JavaCompile>() {
 
 tasks.withType<Copy> {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    includeEmptyDirs = false
 }
 
 sourceSets {
     main {
 	java {
-	    srcDir("src/main/java")
-	    exclude("**/tests/**")
+	    srcDir(SRC_ROOT)
+	    exclude(TEST_PATTERN)
 	}
 
 	resources {
-	    srcDir("src/main/java/com/tejasoft/sboot/res")
-	    exclude("**/tests/**")
+	    srcDir(SRC_ROOT)
+	    include("**/sboot/res/**")
+	    exclude(TEST_PATTERN)
 	}
     }
 
     test {
 	java {
-	    srcDir("src/main/java")
-	    include("**/tests/**")
+	    srcDir(SRC_ROOT)
+	    include(TEST_PATTERN)
 	}
 
 	resources {
-	    srcDir("src/main/java/com/tejasoft/sboot/tests/archunit/res")
+	    srcDir(SRC_ROOT)
+	    include("**/tests/archunit/res/**")
 	}
     }
 }
@@ -61,4 +67,3 @@ sourceSets {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
-
