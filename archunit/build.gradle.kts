@@ -1,5 +1,8 @@
+import java.awt.Desktop
+
 val SRC_ROOT = "src/main/java"
 val TESTS_PATTERN = "**/tests/**"
+
 
 plugins {
     java
@@ -16,15 +19,9 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
     testImplementation("com.tngtech.archunit:archunit-junit5:1.0.0-rc1")
     runtimeOnly("com.h2database:h2:2.1.214")
-
-    implementation("org.springframework:spring-web:5.3.22")
-    testImplementation("org.mockito:mockito-core:4.1.0")
-    testImplementation("org.springframework.boot:spring-boot-test:2.7.2")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-    testImplementation("org.springframework.boot:spring-boot-test:2.7.2")
 }
 
-group = "com.example"
+group = "com.tejasoft.sboot"
 version = "0.0.1-SNAPSHOT"
 description = "sboot-api-archunit"
 
@@ -51,25 +48,33 @@ sourceSets {
 	}
 
 	resources {
-	    srcDir(SRC_ROOT)
-	    include("**/sboot/res/**")
-	    exclude(TESTS_PATTERN)
+	    srcDir(SRC_ROOT + "/com/tejasoft/sboot/res")
 	}
     }
 
     test {
+
 	java {
 	    srcDir(SRC_ROOT)
 	    include(TESTS_PATTERN)
 	}
 
 	resources {
-	    srcDir(SRC_ROOT)
-	    include("**/tests/archunit/res/**")
+	    srcDir(SRC_ROOT + "/com/tejasoft/sboot/tests/archunit/res")
 	}
     }
 }
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    ignoreFailures = true
 }
+
+tasks.register("openTR") {
+    doLast {
+	project.buildDir
+	Desktop.getDesktop().browse(File("$buildDir/reports/tests/test/index.html").toURI())
+    }
+}
+
+defaultTasks("clean", "test", "openTR")
