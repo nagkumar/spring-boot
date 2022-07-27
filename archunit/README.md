@@ -25,3 +25,4 @@ gradle clean test
 
 gives the report outputs in build/reports/tests/test/index.html
 
+gradle dependencyUpdates
