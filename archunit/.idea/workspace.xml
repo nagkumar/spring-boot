@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CoverUsage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/EmailType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/PhoneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/utils/APIConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/utils/APIConsts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/res/archunit.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/res/archunit.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ClassesRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ClassesRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ConstructorsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ConstructorsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/FieldsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/FieldsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/MethodsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/MethodsRules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +59,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;G:/DWork/osource/spring-boot/archunit/build.gradle.kts&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.10804598&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.diffblue.cover.intellij&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -65,6 +82,88 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tejasoft.sboot.archunit.test.utils.classes" />
     </key>
+  </component>
+  <component name="RunManager" selected="Diffblue Cover.Write tests for class ClientPhone">
+    <configuration name="Write tests for class Client" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class Client" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.models.Client" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class ClientController" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class ClientController" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.controllers.ClientController" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class ClientEmail" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class ClientEmail" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.models.ClientEmail" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class ClientPhone" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class ClientPhone" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.models.ClientPhone" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class EmailType" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class EmailType" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.models.EmailType" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for class PhoneType" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for class PhoneType" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>class</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.models.PhoneType" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package controllers" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for package controllers" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="com.tejasoft.sboot.api.client.controllers" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for prefix unknown" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="sboot-api-archunit.main" />
+      <settings run-config-name="Write tests for prefix unknown" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>prefix</selection-scope>
+      </settings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Diffblue Cover.Write tests for prefix unknown" />
+        <item itemvalue="Diffblue Cover.Write tests for class PhoneType" />
+        <item itemvalue="Diffblue Cover.Write tests for class EmailType" />
+        <item itemvalue="Diffblue Cover.Write tests for class ClientPhone" />
+        <item itemvalue="Diffblue Cover.Write tests for class Client" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

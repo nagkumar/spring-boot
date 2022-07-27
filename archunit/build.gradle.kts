@@ -1,5 +1,5 @@
 val SRC_ROOT = "src/main/java"
-val TEST_PATTERN = "**/tests/**"
+val TESTS_PATTERN = "**/tests/**"
 
 plugins {
     java
@@ -16,6 +16,12 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
     testImplementation("com.tngtech.archunit:archunit-junit5:1.0.0-rc1")
     runtimeOnly("com.h2database:h2:2.1.214")
+
+    implementation("org.springframework:spring-web:5.3.22")
+    testImplementation("org.mockito:mockito-core:4.1.0")
+    testImplementation("org.springframework.boot:spring-boot-test:2.7.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation("org.springframework.boot:spring-boot-test:2.7.2")
 }
 
 group = "com.example"
@@ -28,7 +34,7 @@ publishing {
     }
 }
 
-tasks.withType<JavaCompile>() {
+tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
 
@@ -41,20 +47,20 @@ sourceSets {
     main {
 	java {
 	    srcDir(SRC_ROOT)
-	    exclude(TEST_PATTERN)
+	    exclude(TESTS_PATTERN)
 	}
 
 	resources {
 	    srcDir(SRC_ROOT)
 	    include("**/sboot/res/**")
-	    exclude(TEST_PATTERN)
+	    exclude(TESTS_PATTERN)
 	}
     }
 
     test {
 	java {
 	    srcDir(SRC_ROOT)
-	    include(TEST_PATTERN)
+	    include(TESTS_PATTERN)
 	}
 
 	resources {
