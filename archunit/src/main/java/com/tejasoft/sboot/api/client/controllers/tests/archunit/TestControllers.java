@@ -45,7 +45,6 @@ final class TestControllers
 						     CONTROLLER_SUFFIX,
 						     "@RestController") + ", and not with @Controller");
 
-
     // Fields
     @ArchTest
     static final ArchRule fields_should_not_be_public = fieldsShouldNotBePublic(CONTROLLER_PACKAGE);
