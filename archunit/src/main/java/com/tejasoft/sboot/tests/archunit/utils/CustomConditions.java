@@ -33,7 +33,6 @@ public final class CustomConditions
 
     private CustomConditions()
     {
-
     }
 
     public static ArchCondition<JavaField> haveGetter(Map<String, String> exclusions)
