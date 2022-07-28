@@ -20,7 +20,9 @@ final class TestRepositories
     @ArchTest
     static final ArchRule classes_should_be_annotated =
 	    ArchRuleDefinition.classes()
-			      .that().resideInAPackage(REPOSITORY_PACKAGE).should()
+			      .that()
+			      .resideInAPackage(REPOSITORY_PACKAGE)
+			      .should()
 			      .beAnnotatedWith(Repository.class)
 			      .because(String.format(ANNOTATED_EXPLANATION,
 						     REPOSITORY_SUFFIX,

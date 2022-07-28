@@ -8,7 +8,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "emailType")
-public final class EmailType extends Base
+public final class EmailType
+	extends Base
 {
     private static final long serialVersionUID = 1697687804373017457L;
 
@@ -37,6 +38,7 @@ public final class EmailType extends Base
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this, aObj);
+	return Objects.equal(this,
+			     aObj);
     }
 }

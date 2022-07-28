@@ -35,25 +35,42 @@ final class TestGeneralCoding
     //Fields
     @ArchTest
     static final ArchRule loggersShouldBePrivateStaticAndFinal =
-	    ArchRuleDefinition.fields().that().haveRawType(Logger.class)
-			      .should().bePrivate()
-			      .andShould().beStatic()
-			      .andShould().beFinal()
-			      .andShould().haveName("LOGGER")
+	    ArchRuleDefinition.fields()
+			      .that()
+			      .haveRawType(Logger.class)
+			      .should()
+			      .bePrivate()
+			      .andShould()
+			      .beStatic()
+			      .andShould()
+			      .beFinal()
+			      .andShould()
+			      .haveName("LOGGER")
 			      .because(
 				      "Logger variables should be private, static and final, and it should be named as LOGGER");
 
     @ArchTest
     static final ArchRule finalStaticVariablesInUppercase =
-	    ArchRuleDefinition.fields().that().areStatic().and().areFinal()
-			      .and().doNotHaveName("serialVersionUID")
-			      .and().doNotHaveModifier(JavaModifier.SYNTHETIC)
-			      .should().haveNameMatching(".*^[A-Z].*")
+	    ArchRuleDefinition.fields()
+			      .that()
+			      .areStatic()
+			      .and()
+			      .areFinal()
+			      .and()
+			      .doNotHaveName("serialVersionUID")
+			      .and()
+			      .doNotHaveModifier(JavaModifier.SYNTHETIC)
+			      .should()
+			      .haveNameMatching(".*^[A-Z].*")
 			      .because("Variables with static and final modifiers should be named in uppercase");
 
     //Methods
     @ArchTest
     static final ArchRule beanMethodsShouldBePublic =
-	    ArchRuleDefinition.methods().that().areAnnotatedWith(Bean.class).should().bePublic()
+	    ArchRuleDefinition.methods()
+			      .that()
+			      .areAnnotatedWith(Bean.class)
+			      .should()
+			      .bePublic()
 			      .because("@Bean annotation does not work in non public methods");
 }

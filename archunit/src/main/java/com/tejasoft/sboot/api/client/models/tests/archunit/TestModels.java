@@ -22,9 +22,11 @@ final class TestModels
     //Classes
     @ArchTest
     static final ArchRule classesShouldOverrideEqualsAndHashCode =
-	    ArchRuleDefinition.classes().that()
+	    ArchRuleDefinition.classes()
+			      .that()
 			      .resideInAnyPackage(MODEL_PACKAGE)
-			      .and().areNotMemberClasses()
+			      .and()
+			      .areNotMemberClasses()
 			      .should(HAVE_EQUALS_AND_HASH_CODE)
 			      .because("Model classes should override equals and hashCode methods");
 
@@ -34,7 +36,8 @@ final class TestModels
     //Fields
     @ArchTest
     static final ArchRule fieldsShouldHaveGetter =
-	    FieldsRules.fieldsShouldHaveGetterRule(Maps.newHashMap(), MODEL_PACKAGE);
+	    FieldsRules.fieldsShouldHaveGetterRule(Maps.newHashMap(),
+						   MODEL_PACKAGE);
 
     @ArchTest
     static final ArchRule publicAndFinalFieldsAreNotAllowed = publicAndFinalFieldsAreNotAllowedRule(MODEL_PACKAGE);

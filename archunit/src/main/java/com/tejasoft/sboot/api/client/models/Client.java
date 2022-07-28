@@ -13,7 +13,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "client")
-public final class Client extends Base
+public final class Client
+	extends Base
 {
     private static final long serialVersionUID = -2974615880078954663L;
 
@@ -126,6 +127,7 @@ public final class Client extends Base
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this, aObj);
+	return Objects.equal(this,
+			     aObj);
     }
 }

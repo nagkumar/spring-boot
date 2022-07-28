@@ -18,26 +18,48 @@ public final class ClassesRules
     {
 	//aExcludedPackages = (aExcludedPackages == null) ? TestArchUnitConsts.TEST_PACKAGE : new String[0];
 
-	return ArchRuleDefinition.classes().that().resideInAPackage(aPackageName).and().resideOutsideOfPackages(
-		aExcludedPackages).should().beInterfaces().because(
-		String.format("Resources should be interfaces in %s", aPackageName));
+	return ArchRuleDefinition.classes()
+				 .that()
+				 .resideInAPackage(aPackageName)
+				 .and()
+				 .resideOutsideOfPackages(aExcludedPackages)
+				 .should()
+				 .beInterfaces()
+				 .because(String.format("Resources should be interfaces in %s",
+							aPackageName));
     }
 
     public static ArchRule componentAnnotationIsNotAllowedRule(final String aPackageName)
     {
-	return ArchRuleDefinition.classes().that().resideInAPackage(aPackageName).should().notBeAnnotatedWith(
-		Component.class).because(String.format("Component annotation is not allowed in %s", aPackageName));
+	return ArchRuleDefinition.classes()
+				 .that()
+				 .resideInAPackage(aPackageName)
+				 .should()
+				 .notBeAnnotatedWith(Component.class)
+				 .because(String.format("Component annotation is not allowed in %s",
+							aPackageName));
     }
 
     public static ArchRule springAnnotationsClassesAreNotAllowedRule(final String... aPackageNames)
     {
-	return ArchRuleDefinition.classes().that().resideInAnyPackage(aPackageNames).should().notBeAnnotatedWith(
-		Service.class).andShould().notBeAnnotatedWith(Component.class).andShould().notBeAnnotatedWith(
-		Configuration.class).andShould().notBeAnnotatedWith(
-		ConfigurationProperties.class).andShould().notBeAnnotatedWith(
-		Bean.class).andShould().notBeAnnotatedWith(Controller.class).andShould().notBeAnnotatedWith(
-		RestController.class).because(
-		String.format("Classes in %s should not be annotated with Spring annotations",
-			      Arrays.toString(aPackageNames)));
+	return ArchRuleDefinition.classes()
+				 .that()
+				 .resideInAnyPackage(aPackageNames)
+				 .should()
+				 .notBeAnnotatedWith(Service.class)
+				 .andShould()
+				 .notBeAnnotatedWith(Component.class)
+				 .andShould()
+				 .notBeAnnotatedWith(Configuration.class)
+				 .andShould()
+				 .notBeAnnotatedWith(ConfigurationProperties.class)
+				 .andShould()
+				 .notBeAnnotatedWith(Bean.class)
+				 .andShould()
+				 .notBeAnnotatedWith(Controller.class)
+				 .andShould()
+				 .notBeAnnotatedWith(RestController.class)
+				 .because(String.format("Classes in %s should not be annotated with Spring annotations",
+							Arrays.toString(aPackageNames)));
     }
 }

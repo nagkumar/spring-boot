@@ -6,7 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/APIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/APIApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/tests/archunit/TestControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/tests/archunit/TestControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/ClientPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/EmailType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/EmailType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/PhoneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/PhoneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/tests/archunit/TestModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/models/tests/archunit/TestModels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/tests/archunit/TestRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/repositories/tests/archunit/TestRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/tests/archunit/TestServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/services/tests/archunit/TestServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/TestGeneralCoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/TestGeneralCoding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/CustomConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/CustomConditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ClassesRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ClassesRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ConstructorsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/ConstructorsRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/FieldsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/FieldsRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/MethodsRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/structs/MethodsRules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +68,19 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/DWork/osource/spring-boot/archunit&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.10804598&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.49625084&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "G:/DWork/osource/spring-boot/archunit",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.10804598",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "settings.editor.splitter.proportion": "0.17751479"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.tejasoft.sboot.api.utils.StringConsts" />

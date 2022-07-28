@@ -74,10 +74,10 @@ public final class CustomConditions
 
 		if (!publicMethods.contains(lGetter))
 		{
-		    String message = String
-			    .format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, aJavaField.getName(),
-				    aJavaField.getOwner().getName(),
-				    GETTER_PREFIX);
+		    String message = String.format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE,
+						   aJavaField.getName(),
+						   aJavaField.getOwner().getName(),
+						   GETTER_PREFIX);
 		    aConditionEvents.add(SimpleConditionEvent.violated(aJavaField, message));
 		}
 
@@ -87,9 +87,10 @@ public final class CustomConditions
 
 		    if (!publicMethods.contains(setter))
 		    {
-			String message =
-				String.format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE, aJavaField.getName(),
-					      aJavaField.getOwner().getName(), SETTER_PREFIX);
+			String message = String.format(GETTER_OR_SETTER_NOT_PRESENT_ERROR_MESSAGE,
+						       aJavaField.getName(),
+						       aJavaField.getOwner().getName(),
+						       SETTER_PREFIX);
 			aConditionEvents.add(SimpleConditionEvent.violated(aJavaField, message));
 		    }
 		}
@@ -136,10 +137,14 @@ public final class CustomConditions
 	    @Override
 	    public void check(JavaClass javaClass, ConditionEvents events)
 	    {
-		javaClass.getMethods().stream()
+		javaClass.getMethods()
+			 .stream()
 			 .filter(m -> m.getModifiers().contains(JavaModifier.STATIC))
-			 .forEach(m -> SimpleConditionEvent.violated(javaClass, String
-				 .format("Static method %s in %s is not allowed", m.getName(), javaClass.getName())));
+			 .forEach(m -> SimpleConditionEvent.violated(javaClass,
+								     String.format(
+									     "Static method %s in %s is not allowed",
+									     m.getName(),
+									     javaClass.getName())));
 	    }
 	};
     }
@@ -156,7 +161,8 @@ public final class CustomConditions
 
     private static Optional<JavaMethod> findPublicMethodFromClass(final JavaClass aJavaClass, final String aMethodName)
     {
-	return aJavaClass.getMethods().stream()
+	return aJavaClass.getMethods()
+			 .stream()
 			 .filter(m -> m.getModifiers().contains(JavaModifier.PUBLIC) && aMethodName.equals(m.getName()))
 			 .findFirst();
     }

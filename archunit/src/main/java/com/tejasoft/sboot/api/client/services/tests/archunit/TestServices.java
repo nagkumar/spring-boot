@@ -23,7 +23,9 @@ final class TestServices
     @ArchTest
     static final ArchRule classes_should_be_annotated =
 	    ArchRuleDefinition.classes()
-			      .that().resideInAPackage(ArchUnitConsts.SERVICE_PACKAGE).should()
+			      .that()
+			      .resideInAPackage(ArchUnitConsts.SERVICE_PACKAGE)
+			      .should()
 			      .beAnnotatedWith(Service.class)
 			      .because(String.format(
 				      ArchUnitConsts.ANNOTATED_EXPLANATION,

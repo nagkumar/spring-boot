@@ -11,7 +11,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = APIConsts.CLIENT_PHONE)
-public final class ClientPhone extends Base
+public final class ClientPhone
+	extends Base
 {
     private static final long serialVersionUID = 1396542167093193958L;
 
@@ -68,6 +69,7 @@ public final class ClientPhone extends Base
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this, aObj);
+	return Objects.equal(this,
+			     aObj);
     }
 }

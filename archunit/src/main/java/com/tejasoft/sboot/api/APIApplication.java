@@ -10,6 +10,7 @@ public class APIApplication
 {
     public static void main(final String[] aArgs)
     {
-	SpringApplication.run(APIApplication.class, aArgs);
+	SpringApplication.run(APIApplication.class,
+			      aArgs);
     }
 }

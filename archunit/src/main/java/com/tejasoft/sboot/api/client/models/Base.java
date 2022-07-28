@@ -11,7 +11,8 @@ import javax.persistence.Version;
 import java.io.Serializable;
 
 @MappedSuperclass
-public abstract class Base implements Serializable
+public abstract class Base
+	implements Serializable
 {
     private static final long serialVersionUID = -2053886894431223968L;
 
@@ -59,12 +60,15 @@ public abstract class Base implements Serializable
     @Override
     public int hashCode()
     {
-	return Objects.hashCode(id, active, version);
+	return Objects.hashCode(id,
+				active,
+				version);
     }
 
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this, aObj);
+	return Objects.equal(this,
+			     aObj);
     }
 }
