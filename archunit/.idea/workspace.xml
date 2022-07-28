@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/tests/archunit/TestControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/api/client/controllers/tests/archunit/TestControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/ArchUnitConsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tejasoft/sboot/tests/archunit/utils/ArchUnitConsts.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ed7220e-5fcf-4e36-9f7e-19f99f7e7c73" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
