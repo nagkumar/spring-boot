@@ -24,8 +24,7 @@ public final class ClientService
 
 	if (client.isPresent())
 	{
-	    client.get()
-		  .setActive(Boolean.FALSE);
+	    client.get().setActive(Boolean.FALSE);
 	    clientRepository.save(client.get());
 	    return Boolean.TRUE;
 	}

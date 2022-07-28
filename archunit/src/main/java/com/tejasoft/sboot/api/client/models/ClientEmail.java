@@ -68,7 +68,6 @@ public final class ClientEmail
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this,
-			     aObj);
+	return Objects.equal(this, aObj);
     }
 }

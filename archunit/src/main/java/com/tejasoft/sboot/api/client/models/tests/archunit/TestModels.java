@@ -36,8 +36,7 @@ final class TestModels
     //Fields
     @ArchTest
     static final ArchRule fieldsShouldHaveGetter =
-	    FieldsRules.fieldsShouldHaveGetterRule(Maps.newHashMap(),
-						   MODEL_PACKAGE);
+	    FieldsRules.fieldsShouldHaveGetterRule(Maps.newHashMap(), MODEL_PACKAGE);
 
     @ArchTest
     static final ArchRule publicAndFinalFieldsAreNotAllowed = publicAndFinalFieldsAreNotAllowedRule(MODEL_PACKAGE);

@@ -1,6 +1,6 @@
 package com.tejasoft.sboot.tests.archunit.utils;
 
-public final class ArchUnitConsts
+public interface ArchUnitConsts
 {
     // Suffixes
     public static final String CONTROLLER_SUFFIX = "Controller";
@@ -21,8 +21,4 @@ public final class ArchUnitConsts
 
     // Explanations
     public static final String ANNOTATED_EXPLANATION = "Classes in %s package should be annotated with %s";
-
-    private ArchUnitConsts()
-    {
-    }
 }

@@ -38,7 +38,6 @@ public final class PhoneType
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this,
-			     aObj);
+	return Objects.equal(this, aObj);
     }
 }

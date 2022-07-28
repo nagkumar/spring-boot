@@ -26,7 +26,6 @@ public final class ClientController
     @DeleteMapping(value = APIConsts.ID_PATH)
     public @ResponseBody ResponseEntity<Boolean> delete(@PathVariable(APIConsts.ID) Long aId)
     {
-	return new ResponseEntity<>(clientService.delete(aId),
-				    HttpStatus.OK);
+	return new ResponseEntity<>(clientService.delete(aId), HttpStatus.OK);
     }
 }

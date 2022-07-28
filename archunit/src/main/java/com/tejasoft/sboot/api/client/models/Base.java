@@ -60,15 +60,12 @@ public abstract class Base
     @Override
     public int hashCode()
     {
-	return Objects.hashCode(id,
-				active,
-				version);
+	return Objects.hashCode(id, active, version);
     }
 
     @Override
     public boolean equals(final Object aObj)
     {
-	return Objects.equal(this,
-			     aObj);
+	return Objects.equal(this, aObj);
     }
 }
