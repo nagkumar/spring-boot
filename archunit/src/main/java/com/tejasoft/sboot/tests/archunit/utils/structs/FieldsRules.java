@@ -14,10 +14,24 @@ public final class FieldsRules
     public static ArchRule fieldsShouldHaveGetterRule(final Map<String, String> aExclusions,
 						      final String... aPackageNames)
     {
-	return ArchRuleDefinition.fields().that().areDeclaredInClassesThat().resideInAnyPackage(
-		aPackageNames).and().areDeclaredInClassesThat().areNotMemberClasses().and().arePrivate().and().areNotFinal().and().areNotStatic().should(
-		CustomConditions.haveGetter(aExclusions)).because(
-		"Private fields should have getters in %s" + Arrays.toString(aPackageNames));
+	return ArchRuleDefinition.fields()
+				 .that()
+				 .areDeclaredInClassesThat()
+				 .resideInAnyPackage(
+					 aPackageNames)
+				 .and()
+				 .areDeclaredInClassesThat()
+				 .areNotMemberClasses()
+				 .and()
+				 .arePrivate()
+				 .and()
+				 .areNotFinal()
+				 .and()
+				 .areNotStatic()
+				 .should(
+					 CustomConditions.haveGetter(aExclusions))
+				 .because(
+					 "Private fields should have getters in %s" + Arrays.toString(aPackageNames));
     }
 
     public static ArchRule fieldsShouldNotBePublic(final String aPackageName)
