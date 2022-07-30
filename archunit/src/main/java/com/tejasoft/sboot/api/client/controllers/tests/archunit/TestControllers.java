@@ -74,7 +74,6 @@ final class TestControllers
 			      .should()
 			      .haveRawReturnType(ResponseEntity.class)
 			      .because("Controller endpoints should return a ResponseEntity object");
-
     @ArchTest
     static final ArchRule methods_should_be_annotated_with_valid_annotations =
 	    ArchRuleDefinition.methods()
